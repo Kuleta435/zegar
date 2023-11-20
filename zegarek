@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    img{
+        height:100px;
+        width: 200px;
+    }
+    .wzor{
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 180px;
+        width: 98%;
+        margin: 5px;
+        padding: 5px;
+
+    }
+    .godziny{
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 70px;
+        width: 150px;
+        margin: 5px;
+        padding: 5px;
+        display: inline-block;
+    }
+    .minuty{
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 70px;
+        width: 150px;
+        margin: 5px;
+        padding: 5px;
+        display: inline-block;
+    }
+    .zegar{
+        color: black;
+        border-radius: 50%;
+        border: 5px solid #222;
+        height: 1px;
+        padding-bottom: 15%;
+        position: relative;
+        width: 150px;
+    }
+    .hour{
+        background: #000;
+        height: 20%;
+        left: 48.75%;
+        position: absolute;
+        top: 30%;
+        transform-origin: 50% 100%;
+        width: 2%;
+    }
+    .min{
+        background: #000;
+        height: 40%;
+        left: 49%;
+        position: absolute;
+        top: 10%;
+        transform-origin: 50% 100%;
+        width: 1%;
+    }
+    .kat{
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 70px;
+        width: 150px;
+        margin: 5px;
+        padding: 5px;
+        float: left;
+    }
+
+</style>
+<body>
+<h3>Miara kąta między wskazówkami zegara</h3>
+<div class="wzor">
+    <p>Miarę kąta między wskazówką minutową a godzinową można obliczyć wedłgu wzrou:</p>
+    <img src="wzor.png">
+</div>
+<div class="godziny">
+    <h>Godziny [0, 11]</h>
+    <input type="range">
+    <p style="text-decoration-line: underline; text-align: right;">0</p>
+</div>
+<div class="minuty">
+    <h>Minuty [0, 60]</h>
+    <input  type="range">
+    <p style="text-decoration-line: underline; text-align: right; border-bottom: 1px; width: 100%; display: inline-block">0</p>
+</div>
+<div class="zegar">
+    <div class="min"></div>
+    <div class="hour"></div>
+</div>
+<div class="kat">
+    <p>Kąt</p>
+    <p style="text-decoration-line: underline; text-align: right; border-bottom: 30px">0&deg;</p>
+
+</div>
+</body>
+</html>
